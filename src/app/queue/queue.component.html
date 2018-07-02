@@ -1,0 +1,22 @@
+<div class="center">
+	<ol class="questionlist">
+		<li *ngFor="let q of questionlist" (click)="onSelect(q)"
+			[class.selected]="q === selectedQuestion"
+			(click)="onSelect(q)">
+			<span class="question"> {{ q.name }} </span>
+		</li>
+	</ol>
+</div>
+
+<div *ngIf="selectedQuestion">
+
+<h2>{{selectedQuestion.name | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedQuestion.id}}</div>
+	<div>
+	  <label>name:
+	    <input [(ngModel)]="selectedQuestion.name" placeholder="name">
+	  </label>
+	</div>
+
+</div>
+

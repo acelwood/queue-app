@@ -1,0 +1,18 @@
+h1 {
+	font-family: Georgia, serif;
+  	font-size: 200%;
+}
+
+.center {
+	text-align: center;
+}
+
+.questionlist {
+ 	display:inline-block;
+	text-align:left;
+}
+
+.selected {
+	color: blue;
+}
+

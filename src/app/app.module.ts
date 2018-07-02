@@ -1,14 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { QueueComponent } from './queue/queue.component';
+import { QuestionformComponent } from './questionform/questionform.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QueueComponent,
+    QuestionformComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
